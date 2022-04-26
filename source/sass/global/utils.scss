@@ -17,13 +17,13 @@
   }
 }
 
-.rouble {
-  font-family: $ff-rouble;
-  /* stylelint-disable */
-  text-transform: lowercase !important;
-  font-weight: 400 !important;
-  /* stylelint-enable */
-}
+// .rouble {
+//   font-family: $ff-rouble;
+//   /* stylelint-disable */
+//   text-transform: lowercase !important;
+//   font-weight: 400 !important;
+//   /* stylelint-enable */
+// }
 
 .visually-hidden {
   position: absolute;
@@ -33,11 +33,8 @@
   margin: -1px;
   padding: 0;
   overflow: hidden;
-
   white-space: nowrap;
-
   border: 0;
-
   clip: rect(0 0 0 0);
   clip-path: inset(100%);
 }
