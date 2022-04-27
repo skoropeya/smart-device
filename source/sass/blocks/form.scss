@@ -1,0 +1,88 @@
+.form {
+  background-color: $color-deepsky-blue;
+
+  label {
+    font-size: 14px;
+    line-height: 16px;
+    color: $color-white;
+    opacity: 0.8;
+  }
+
+  input[type="text"],
+  input[type="tel"],
+  textarea {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 20px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    color: $color-alice-blue;
+    background-color: $color-black-pearl-transparent;
+    border: none;
+    border-radius: 3px;
+    outline: none;
+
+    &::placeholder {
+      color: $color-white;
+    }
+
+    @media (hover: hover), screen and (min-width: 0\0) {
+      &:hover,
+      &:focus {
+        outline: 2px solid $color-alice-blue;
+      }
+    }
+
+    &:active {
+      outline: 2px solid $color-alice-blue;
+    }
+  }
+
+  textarea {
+    padding-top: 25px;
+  }
+
+  input[type="checkbox"] {
+    & + label {
+      position: relative;
+      padding-left: 26px;
+      cursor: pointer;
+      user-select: none;
+    }
+
+    & + label::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 15px;
+      height: 15px;
+      background-color: $color-transparent;
+      background-image: none;
+      border: 1px solid $color-white;
+      border-radius: 2px;
+    }
+
+    &:checked + label::before {
+      background-image: url("../img/svg/check.svg");
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+
+    @media (hover: hover), screen and (min-width: 0\0) {
+      & + label:hover::before,
+      &:focus + label::before {
+        background-color: $color-black-pearl-transparent;
+      }
+    }
+
+    &:active + label::before {
+      background-color: $color-black-pearl-transparent;
+    }
+  }
+
+  button[type="submit"] {
+    padding: 15px;
+  }
+}

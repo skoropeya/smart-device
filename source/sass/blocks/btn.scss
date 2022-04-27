@@ -21,6 +21,19 @@
   &--transparent-light {
     border-color: $color-alice-blue;
     color: $color-alice-blue;
+
+    @media (hover: hover), screen and (min-width: 0\0) {
+      &:hover,
+      &:focus {
+        border-color: darken($color-alice-blue, 20%);
+        color: darken($color-alice-blue, 20%);
+      }
+    }
+
+    &:active {
+      border-color: darken($color-alice-blue, 20%);
+      color: darken($color-alice-blue, 20%);
+    }
   }
 
   &--blue-light {
@@ -29,6 +42,34 @@
     border-color: $color-deepsky-blue;
     color: $color-alice-blue;
     background-color: $color-deepsky-blue;
+
+    @media (hover: hover), screen and (min-width: 0\0) {
+      &:hover,
+      &:focus {
+        border-color: darken($color-deepsky-blue, 20%);
+        background-color: darken($color-deepsky-blue, 20%);
+      }
+    }
+
+    &:active {
+      border-color: darken($color-deepsky-blue, 20%);
+      background-color: darken($color-deepsky-blue, 20%);
+    }
+  }
+
+  &--transparent-blue {
+    @media (hover: hover), screen and (min-width: 0\0) {
+      &:hover,
+      &:focus {
+        border-color: darken($color-deepsky-blue, 20%);
+        color: darken($color-deepsky-blue, 20%);
+      }
+    }
+
+    &:active {
+      border-color: darken($color-deepsky-blue, 20%);
+      color: darken($color-deepsky-blue, 20%);
+    }
   }
 
   &--dark-light {
@@ -37,59 +78,23 @@
     border-color: $color-black-pearl;
     color: $color-white;
     background-color: $color-black-pearl;
+
+    @media (hover: hover), screen and (min-width: 0\0) {
+      &:hover,
+      &:focus {
+        border-color: lighten($color-black-pearl, 20%);
+        background-color: lighten($color-black-pearl, 20%);
+      }
+    }
+
+    &:active {
+      border-color: lighten($color-black-pearl, 20%);
+      background-color: lighten($color-black-pearl, 20%);
+    }
   }
 
   &:disabled {
     opacity: 0.5;
     pointer-events: none;
   }
-
-
-
-  // @media (hover: hover), screen and (min-width: 0\0) {
-  //   &:hover,
-  //   &:focus {
-  //     &--transparent-light {
-  //       border-color: darken($color-alice-blue, 30%);
-  //       color: darken($color-alice-blue, 30%);
-  //     }
-
-  //     &--blue-light {
-  //       border-color: darken($color-deepsky-blue, 30%);
-  //       background-color: darken($color-deepsky-blue, 30%);
-  //     }
-
-  //     &--transparent-blue {
-  //       border-color: darken($color-deepsky-blue, 30%);
-  //       color: darken($color-deepsky-blue, 30%);
-  //     }
-
-  //     &--dark-light {
-  //       border-color: lighten($color-black-pearl, 20%);
-  //       background-color: lighten($color-black-pearl, 20%);
-  //     }
-  //   }
-  // }
-
-  // &:active {
-  //   &--transparent-light {
-  //     border-color: darken($color-alice-blue, 30%);
-  //     color: darken($color-alice-blue, 30%);
-  //   }
-
-  //   &--blue-light {
-  //     border-color: darken($color-deepsky-blue, 30%);
-  //     background-color: darken($color-deepsky-blue, 30%);
-  //   }
-
-  //   &--transparent-blue {
-  //     border-color: darken($color-deepsky-blue, 30%);
-  //     color: darken($color-deepsky-blue, 30%);
-  //   }
-
-  //   &--dark-light {
-  //     border-color: lighten($color-black-pearl, 20%);
-  //     background-color: lighten($color-black-pearl, 20%);
-  //   }
-  // }
 }
