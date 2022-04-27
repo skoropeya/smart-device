@@ -5,7 +5,7 @@
 
 $color-black:               #000000;
 $color-white:               #ffffff;
-$color-transparent:                 rgba(255, 255, 255, 0);
+$color-transparent:         rgba(255, 255, 255, 0);
 
 // Project palette
 // для нейминга цветов используем https://www.htmlcsscolor.com/hex/334482
@@ -17,8 +17,9 @@ $color-deepsky-blue:  #00b2ff;
 $color-black-pearl-transparent: rgba(4, 20, 39, 0.15);
 
 // Gradient
-
+// фон хедера
 $black-pearl-to-bottom: linear-gradient(180deg, #041827 84.9%, rgba(4, 24, 39, 0) 100%);
+
 
 // Typography
 // ---------------------------------
@@ -46,8 +47,9 @@ $ff-roboto-condensed: "Roboto Condensed", "Arial", sans-serif;
 // ---------------------------------
 
 $vp-320:                            320px;
-$vp-770:                            770px;
+$vp-768:                            768px;
 $vp-1024:                           1024px;
+$vp-1440:                           1440px;
 $vp-1920:                           1920px;
 
 // Retina
