@@ -18,8 +18,9 @@ $color-black-pearl-transparent: rgba(4, 20, 39, 0.15);
 
 // Gradient
 // фон хедера
-$black-pearl-to-bottom: linear-gradient(180deg, #041827 84.9%, rgba(4, 24, 39, 0) 100%);
-
+$black-pearl-header: linear-gradient(180deg, #041827 84.9%, rgba(4, 24, 39, 0) 100%);
+// фон главного экрана
+$black-pearl-promo: linear-gradient(180deg, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%);
 
 // Typography
 // ---------------------------------

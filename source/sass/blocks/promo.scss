@@ -1,0 +1,91 @@
+.promo {
+  background-color: $color-black-pearl;
+  background-image: $black-pearl-promo, url("../img/back/promo-desktop.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  color: $color-alice-blue;
+  padding-top: 185px;
+  padding-bottom: 280px;
+  position: relative;
+  top: -120px;
+
+  @include retina {
+    background-image: $black-pearl-promo, url("../img/back/promo-desktop@2x.jpg");
+  }
+
+  h2 {
+    margin: 0;
+    margin-bottom: 40px;
+    font-family: 'Roboto Condensed';
+    font-weight: 700;
+    font-size: 80px;
+    line-height: 94px;
+    letter-spacing: 0.07em;
+    text-transform: uppercase;
+  }
+
+  p {
+    margin: 0;
+    margin-bottom: 40px;
+    width: 680px;
+    font-size: 22px;
+    line-height: 34px;
+  }
+
+  .promo__question {
+    margin: 0;
+  }
+}
+
+@include vp-1023 {
+  .promo {
+    background-image: $black-pearl-promo, url("../img/back/promo-tablet.jpg");
+    padding-top: 180px;
+    padding-bottom: 205px;
+    top: -100px;
+    margin-bottom: -20px;
+
+    @include retina {
+      background-image: $black-pearl-promo, url("../img/back/promo-tablet@2x.jpg");
+    }
+
+    h2 {
+      margin-bottom: 20px;
+      font-size: 64px;
+      line-height: 75px;
+    }
+
+    p {
+      margin-bottom: 50px;
+      width: auto;
+    }
+  }
+}
+
+@include vp-767 {
+  .promo {
+    background-image: $black-pearl-promo, url("../img/back/promo-mobile.jpg");
+    padding-top: 150px;
+    padding-bottom: 190px;
+    top: -70px;
+
+    @include retina {
+      background-image: $black-pearl-promo, url("../img/back/promo-mobile@2x.jpg");
+    }
+
+    h2 {
+      font-size: 36px;
+      line-height: 42px;
+    }
+
+    p {
+      font-size: 14px;
+      line-height: 22px;
+    }
+
+    .promo__question {
+      width: 100%;
+    }
+  }
+}

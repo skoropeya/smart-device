@@ -1,6 +1,6 @@
 .btn {
   display: inline-block;
-  padding: 10px 15px;
+  padding: 9px 14px;
   margin: 10px 0;
   cursor: pointer;
   user-select: none;
@@ -37,6 +37,7 @@
   }
 
   &--blue-light {
+    padding: 14px 24px;
     font-size: 18px;
     line-height: 21px;
     border-color: $color-deepsky-blue;
@@ -96,5 +97,16 @@
   &:disabled {
     opacity: 0.5;
     pointer-events: none;
+  }
+}
+
+
+@include vp-767 {
+  .btn {
+    &--blue-light {
+      padding: 9px;
+      font-size: 14px;
+      line-height: 16px;
+    }
   }
 }
