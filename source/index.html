@@ -23,7 +23,7 @@
                 <source type="image/webp" media="(max-width: 767px)" srcset="img/logo/logo-mobile.webp 1x, img/logo/logo-mobile@2x.webp 2x">
                 <source type="image/webp" srcset="img/logo/logo.webp 1x, img/logo/logo@2x.webp 2x">
                 <source media="(max-width: 767px)" srcset="img/logo/logo-mobile.png 1x, img/logo/logo-mobile@2x.png 2x">
-                <img class="main-nav__logo-img" src="img/logo/logo.png" srcset="img/logo/logo@2x.png 2x" width="215" height="55" alt="Логотип компании Smart Device">
+                <img class="logotype__img" src="img/logo/logo.png" srcset="img/logo/logo@2x.png 2x" width="215" height="55" alt="Логотип компании Smart Device">
               </picture>
             </a>
 
@@ -43,7 +43,7 @@
               </a>
             </div>
 
-           <a class="main-nav__request-call btn btn--transparent-light" href="#">Заказать звонок</a>
+            <a class="main-nav__request-call btn btn--transparent-light" href="#">Заказать звонок</a>
           </nav>
         </div>
       </header>
@@ -56,7 +56,7 @@
             <div class="promo-wrapper">
               <h2 class="promo__heading">Печатные платы</h2>
               <p>производство и монтаж, поставка комплектующих, блоков и модулей</p>
-              <a class="promo__question btn btn--blue-light" href="#">
+              <a class="promo__question btn btn--blue-light" href="#feedback">
                 <span class="promo__question-full">Получить бесплатную консультацию</span>
                 <span class="promo__question-partial">Бесплатная консультация</span>
               </a>
@@ -148,7 +148,7 @@
           </div>
         </section>
 
-        <section class="feedback">
+        <section class="feedback" id="feedback">
           <div class="container">
             <h2 class="visually-hidden">Форма обратной связи</h2>
             <p>Остались вопросы? Задайте их&nbsp;нам!</p>
@@ -177,94 +177,108 @@
 
       <footer class="page-footer">
         <div class="container">
-          <div class="page-footer__wrapper page-footer__wrapper--logo">
-            <a class="page-footer__logo-link logotype logotype--footer">
-              <!-- 1х: 215px x 55px; 2x: 430px x 110px -->
-              <picture>
-                <source type="image/webp" srcset="img/logo/logo.webp 1x, img/logo/logo@2x.webp 2x">
-                <img class="page-footer__logo-img" src="img/logo/logo.png" srcset="img/logo/logo@2x.png 2x" width="215" height="55" alt="Логотип компании Smart Device">
-              </picture>
-            </a>
-          </div>
+          <div class="page-footer__box">
+            <div class="page-footer__wrapper page-footer__wrapper--logo">
+              <a class="page-footer__logo-link logotype logotype--footer">
+                <!-- 1х: 215px x 55px; 2x: 430px x 110px -->
+                <picture>
+                  <source type="image/webp" srcset="img/logo/logo.webp 1x, img/logo/logo@2x.webp 2x">
+                  <img class="logotype__img" src="img/logo/logo.png" srcset="img/logo/logo@2x.png 2x" width="215" height="55" alt="Логотип компании Smart Device">
+                </picture>
+              </a>
+            </div>
 
-          <div class="page-footer__wrapper page-footer__wrapper--social">
-            <ul class="page-footer__social-list">
-              <li class="page-footer__social-item">
-                <a class="page-footer__social-link" href="#">
-                  <span class="visually-hidden">Facebook</span>
-                  <svg class="page-footer__social-icon" width="30" height="30">
-                    <use xlink:href="img/sprite_auto.svg#icon-fb"></use>
-                  </svg>
-                </a>
-              </li>
-              <li class="page-footer__social-item">
-                <a class="page-footer__social-link" href="#">
-                  <span class="visually-hidden">Одноклассники</span>
-                  <svg class="page-footer__social-icon" width="30" height="30">
-                    <use xlink:href="img/sprite_auto.svg#icon-ok"></use>
-                  </svg>
-                </a>
-              </li>
-              <li class="page-footer__social-item">
-                <a class="page-footer__social-link" href="#">
-                  <span class="visually-hidden">Вконтакте</span>
-                  <svg class="page-footer__social-icon" width="30" height="30">
-                    <use xlink:href="img/sprite_auto.svg#icon-vk"></use>
-                  </svg>
-                </a>
-              </li>
-            </ul>
-          </div>
+            <div class="page-footer__wrapper page-footer__wrapper--social">
+              <ul class="page-footer__social-list social-list">
+                <li class="social-list__item">
+                  <a class="social-list__link" href="#">
+                    <span class="visually-hidden">Facebook</span>
+                    <svg class="social-list__icon" width="30" height="30">
+                      <use xlink:href="img/sprite_auto.svg#icon-fb"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social-list__item">
+                  <a class="social-list__link" href="#">
+                    <span class="visually-hidden">Одноклассники</span>
+                    <svg class="social-list__icon" width="30" height="30">
+                      <use xlink:href="img/sprite_auto.svg#icon-ok"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social-list__item">
+                  <a class="social-list__link" href="#">
+                    <span class="visually-hidden">Вконтакте</span>
+                    <svg class="social-list__icon" width="30" height="30">
+                      <use xlink:href="img/sprite_auto.svg#icon-vk"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </div>
 
-          <div class="page-footer__wrapper page-footer__wrapper--nav">
-            <h3 class="page-footer__title">Разделы сайта</h3>
-            <button class="page-footer__btn show-hide show-hide--menu" type="button">
-              <span class="visually-hidden">Показать/скрыть</span>
-            </button>
-            <ul class="page-footer__menu">
-              <li class="page-footer__item">
-                <a href="#">О Компаниии</a>
-              </li>
-              <li class="page-footer__item">
-                <a href="#">Продукты</a>
-              </li>
-              <li class="page-footer__item">
-                <a href="#">Производство печатных плат</a>
-              </li>
-              <li class="page-footer__item">
-                <a href="#">Монтаж печатных плат</a>
-              </li>
-              <li class="page-footer__item">
-                <a href="#">Комплектующие</a>
-              </li>
-              <li class="page-footer__item">
-                <a href="#">Доставка</a>
-              </li>
-              <li class="page-footer__item">
-                <a href="#">Контакты</a>
-              </li>
-            </ul>
-          </div>
+            <div class="page-footer__wrapper page-footer__wrapper--nav">
+              <div class="page-footer__title-btn" data-is-open="false">
+                <h3 class="page-footer__title">Разделы сайта</h3>
+                <button class="page-footer__btn show-hide show-hide--menu" data-is-open="false" type="button">
+                  <span class="visually-hidden">Показать/скрыть</span>
+                </button>
+              </div>
 
-          <div class="page-footer__wrapper page-footer__wrapper--contacts">
-            <h3 class="page-footer__title">Наш офис</h3>
-            <button class="page-footer__btn show-hide show-hide--contacts" type="button">
-              <span class="visually-hidden">Показать/скрыть</span>
-            </button>
-            <ul class="page-footer__contacts-list">
-              <li class="page-footer__contacts-item">
-                <address>г. Мытищи, Олимпийский проспект, д.10</address>
-              </li>
-              <li class="page-footer__contacts-item">
-                <a href="tel:+74955894050">+7 (495) 589-40-50</a>
-              </li>
-              <li class="page-footer__contacts-item">
-                <a href="tel:+79253895829">+7 (925) 389-58-29</a>
-              </li>
-              <li class="page-footer__contacts-item">
-                <a href="tel:+79253647813">+7 (925) 364-78-13</a>
-              </li>
-            </ul>
+              <div class="page-footer__menu-box">
+                <ul class="page-footer__menu">
+                  <li class="page-footer__menu-item">
+                    <a href="#">О Компаниии</a>
+                  </li>
+                  <li class="page-footer__menu-item">
+                    <a href="#">Продукты</a>
+                  </li>
+                  <li class="page-footer__menu-item">
+                    <a href="#">Производство печатных плат</a>
+                  </li>
+                  <li class="page-footer__menu-item">
+                    <a href="#">Монтаж печатных плат</a>
+                  </li>
+                </ul>
+                <ul class="page-footer__menu">
+                  <li class="page-footer__menu-item">
+                    <a href="#">Комплектующие</a>
+                  </li>
+                  <li class="page-footer__menu-item">
+                    <a href="#">Доставка</a>
+                  </li>
+                  <li class="page-footer__menu-item">
+                    <a href="#">Контакты</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="page-footer__wrapper page-footer__wrapper--contacts">
+              <div class="page-footer__title-btn" data-is-open="true">
+                <h3 class="page-footer__title">Наш офис</h3>
+                <button class="page-footer__btn show-hide show-hide--contacts" data-is-open="true" type="button">
+                  <span class="visually-hidden">Показать/скрыть</span>
+                </button>
+              </div>
+
+              <div class="page-footer__contacts-box">
+                <ul class="page-footer__contacts-list">
+                  <li class="page-footer__contacts-item">
+                    <address>г. Мытищи, Олимпийский проспект, д.10</address>
+                  </li>
+                  <li class="page-footer__contacts-item">
+                    <a href="tel:+74955894050">+7 (495) 589-40-50</a>
+                  </li>
+                  <li class="page-footer__contacts-item">
+                    <a href="tel:+79253895829">+7 (925) 389-58-29</a>
+                  </li>
+                  <li class="page-footer__contacts-item">
+                    <a href="tel:+79253647813">+7 (925) 364-78-13</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
           </div>
         </div>
       </footer>
