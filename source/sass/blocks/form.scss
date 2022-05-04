@@ -18,7 +18,7 @@
     font-size: 16px;
     line-height: 22px;
     color: $color-alice-blue;
-    background-color: $color-black-pearl-transparent;
+    background-color: $color-black-pearl-transparent-15;
     border: none;
     border-radius: 3px;
     outline: none;
@@ -73,12 +73,12 @@
     @media (hover: hover), screen and (min-width: 0\0) {
       & + label:hover::before,
       &:focus + label::before {
-        background-color: $color-black-pearl-transparent;
+        background-color: $color-black-pearl-transparent-15;
       }
     }
 
     &:active + label::before {
-      background-color: $color-black-pearl-transparent;
+      background-color: $color-black-pearl-transparent-15;
     }
   }
 

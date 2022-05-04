@@ -110,10 +110,11 @@
                 <h2 class="about__heading">О компании</h2>
                 <p>Мы&nbsp;поставляем электронные комплектующие, производим печатные платы и&nbsp;предоставляем мировые технологии с&nbsp;1997&nbsp;года. Выполняем срочные заказы и&nbsp;пилотные образцы до&nbsp;10&nbsp;дней.</p>
                 <p>Наши поставщики&nbsp;&mdash; мировые производители электронных компонентов: OSRAM, CREE, HOLGLITRONIC, REFOND. Печатные платы и&nbsp;комплектующие Service Devices применяются на&nbsp;предприятиях Российских Железных Дорог (РЖД), РоссАвтоПрома (ВАЗ, АвтоГАЗ), МинАтома, СпецМедТехники. Среди наших клиентов крупнейшие Производители светотехники России.</p>
-
-                <p>Smart Device&nbsp;&mdash; это команда профессионалов. Через нас прошло более 1&nbsp;000&nbsp;000&nbsp;клиентов, 70% из&nbsp;которых продолжают сотрудничество по&nbsp;сей день. На&nbsp;данный момент насчитывается более 14&nbsp;офисов по&nbsp;всей стране и&nbsp;20&nbsp;городов присутствия.</p>
-                <p>Мы&nbsp;стремимся к&nbsp;постоянному развитию и&nbsp;повышению уровня качества продукции, производимой внутри компании. Использование инновационных технологий помогает экономить деньги и&nbsp;время наших клиентов.</p>
-                <a class="about__btn btn btn--transparent-blue" href="#" data-is-open="false">
+                <div class="about__hidden-text" id="hidden-text">
+                  <p>Smart Device&nbsp;&mdash; это команда профессионалов. Через нас прошло более 1&nbsp;000&nbsp;000&nbsp;клиентов, 70% из&nbsp;которых продолжают сотрудничество по&nbsp;сей день. На&nbsp;данный момент насчитывается более 14&nbsp;офисов по&nbsp;всей стране и&nbsp;20&nbsp;городов присутствия.</p>
+                  <p>Мы&nbsp;стремимся к&nbsp;постоянному развитию и&nbsp;повышению уровня качества продукции, производимой внутри компании. Использование инновационных технологий помогает экономить деньги и&nbsp;время наших клиентов.</p>
+                </div>
+                <a class="about__btn btn btn--transparent-blue" href="#" data-is-open="false" id="btn-more-hide">
                   <span class="about__btn-more">Подробнее</span>
                   <span class="about__btn-hide">Свернуть</span>
                 </a>
@@ -127,31 +128,50 @@
 
         <section class="services">
           <div class="container">
-            <h2 class="services__heading">Smart Device предлагает следующие товары и услуги</h2>
+            <h2 class="services__heading">
+              <span class="services__heading-full">Smart Device предлагает следующие товары и услуги</span>
+              <span class="services__heading-partial">Товары и услуги<br>Smart Device</span>
+            </h2>
             <ul class="services__list">
-              <li class="services__item">
-                <a class="services__link" href="#">
-                  <h3>Производство печатных плат</h3>
-                  <div>
-                    <span class="visually-hidden">Открыть карточку товаров и услуг</span>
-                  </div>
-                </a>
+              <li class="services__item services__item--production">
+                <div class="services__item-content">
+                  <a class="services__link" href="#">
+                    <div class="services__link-text">
+                      <h3>Производство печатных плат</h3>
+                      <div class="services__btn">
+                        <span class="visually-hidden">Открыть карточку товаров и услуг</span>
+                      </div>
+                    </div>
+
+                    <div class="services__link-back"></div>
+                  </a>
+                </div>
               </li>
-              <li class="services__item">
-                <a class="services__link" href="#">
-                  <h3>Монтаж печатных плат</h3>
-                  <div>
-                    <span class="visually-hidden">Открыть карточку товаров и услуг</span>
-                  </div>
-                </a>
+              <li class="services__item services__item--assembly">
+                <div class="services__item-content">
+                  <a class="services__link" href="#">
+                    <div class="services__link-text">
+                      <h3>Монтаж <br>печатных плат</h3>
+                      <div class="services__btn">
+                        <span class="visually-hidden">Открыть карточку товаров и услуг</span>
+                      </div>
+                    </div>
+                    <div class="services__link-back"></div>
+                  </a>
+                </div>
               </li>
-              <li class="services__item">
-                <a class="services__link" href="#">
-                  <h3>Комплектующие для светотехники</h3>
-                  <div>
-                    <span class="visually-hidden">Открыть карточку товаров и услуг</span>
-                  </div>
-                </a>
+              <li class="services__item services__item--accessories">
+                <div class="services__item-content">
+                  <a class="services__link" href="#">
+                    <div class="services__link-text">
+                      <h3>Комплектующие для светотехники</h3>
+                      <div class="services__btn">
+                        <span class="visually-hidden">Открыть карточку товаров и услуг</span>
+                      </div>
+                    </div>
+                    <div class="services__link-back"></div>
+                  </a>
+                </div>
               </li>
             </ul>
           </div>
@@ -327,6 +347,6 @@
       </div>
     </div>
 
-    <!-- <script src="js/main.min.js"></script> -->
+    <script src="js/main.min.js"></script>
   </body>
 </html>
