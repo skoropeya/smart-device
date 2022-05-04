@@ -59,6 +59,8 @@
   }
 
   &--transparent-blue {
+    padding: 13px 15px;
+
     @media (hover: hover), screen and (min-width: 0\0) {
       &:hover,
       &:focus {
@@ -106,6 +108,10 @@
       padding: 10px;
       font-size: 14px;
       line-height: 16px;
+    }
+
+    &--transparent-blue {
+      padding: 9px 12px;
     }
   }
 }

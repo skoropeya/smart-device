@@ -1,5 +1,5 @@
 .about {
-  margin-bottom: 100px;
+  margin-bottom: 120px;
 
   h2 {
     margin: 0;
@@ -12,16 +12,17 @@
 
   p {
     margin: 0;
-    margin-bottom: 22px;
+    margin-bottom: 20px;
   }
 }
 
-.about__hidden-text {
+.about__hidden-text--all {
   display: none;
 }
 
 .about__btn {
   min-width: 180px;
+  margin-top: 18px;
   margin-bottom: 0;
 
   &[data-is-open="true"] {
@@ -87,15 +88,19 @@
 
 @include vp-1023 {
   .about {
-    margin-bottom: 80px;
+    margin-bottom: 77px;
 
     h2 {
       margin-bottom: 10px;
     }
 
     p {
-      margin-bottom: 17px;
+      margin-bottom: 20px;
     }
+  }
+
+  .about__btn {
+    margin-top: 0;
   }
 
   .about__wrapper {
@@ -109,6 +114,8 @@
 
 @include vp-767 {
   .about {
+    margin-bottom: 80px;
+
     h2 {
       margin-bottom: 12px;
       font-size: 28px;
@@ -122,7 +129,12 @@
     }
   }
 
+  .about__hidden-text--mobile {
+    display: none;
+  }
+
   .about__btn {
+    margin-top: -5px;
     min-width: 160px;
   }
 
