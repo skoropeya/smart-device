@@ -1,5 +1,6 @@
 .form {
   background-color: $color-deepsky-blue;
+  color: $color-alice-blue;
 
   label {
     font-size: 14px;
@@ -12,8 +13,7 @@
   input[type="tel"],
   textarea {
     width: 100%;
-    padding: 15px;
-    margin-bottom: 20px;
+    padding: 14px 15px;
     font-weight: 400;
     font-size: 16px;
     line-height: 22px;
@@ -40,13 +40,15 @@
   }
 
   textarea {
-    padding-top: 25px;
+    min-height: 155px;
+    padding-top: 23px;
   }
 
   input[type="checkbox"] {
     & + label {
+      display: block;
       position: relative;
-      padding-left: 26px;
+      padding-left: 25px;
       cursor: pointer;
       user-select: none;
     }
@@ -54,7 +56,7 @@
     & + label::before {
       content: "";
       position: absolute;
-      top: 0;
+      top: 8px;
       left: 0;
       width: 15px;
       height: 15px;
@@ -83,6 +85,93 @@
   }
 
   button[type="submit"] {
-    padding: 15px;
+    padding: 12px;
+    margin: 0;
+  }
+}
+
+.form__wrapper {
+  display: grid;
+  gap: 30px;
+  grid-template-columns: 1fr 1fr;
+}
+
+.form__wrapper--top {
+  margin-bottom: 20px;
+}
+
+.form__textarea {
+  margin-bottom: 33px;
+}
+
+.form__checkbox {
+  grid-row: 1 / -1;
+  grid-column: 2 / 3;
+  align-self: center;
+  margin-left: 10px;
+}
+
+.form__submit {
+  width: 265px;
+  grid-row: 1 / -1;
+  grid-column: 1 / 2;
+  align-self: start;
+}
+
+@include vp-1023 {
+  .form {
+    textarea {
+      padding-top: 29px;
+    }
+
+    input[type="checkbox"] {
+      & + label::before {
+        top: 0;
+      }
+    }
+  }
+
+  .form__checkbox {
+    margin-left: 0;
+  }
+}
+
+@include vp-767 {
+  .form {
+    input[type="text"],
+    input[type="tel"] {
+      margin-bottom: 20px;
+    }
+
+    textarea {
+      min-height: 180px;
+      padding-top: 23px;
+    }
+  }
+
+  .form__wrapper {
+    display: block;
+  }
+
+  .form__wrapper--top {
+    margin-bottom: 0;
+  }
+
+  .form__textarea {
+    margin-bottom: 29px;
+  }
+
+  .form__wrapper--bottom {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 25px;
+  }
+
+  .form__checkbox {
+    margin-left: 5px;
+  }
+
+  .form__submit {
+    width: 100%;
   }
 }
