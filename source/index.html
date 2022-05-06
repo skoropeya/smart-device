@@ -216,7 +216,7 @@
 
       <footer class="page-footer">
         <div class="container">
-          <div class="page-footer__box">
+          <div class="page-footer__box accordion">
             <div class="page-footer__wrapper page-footer__wrapper--logo">
               <a class="page-footer__logo-link logotype logotype--footer">
                 <!-- 1х: 215px x 55px; 2x: 430px x 110px -->
@@ -256,15 +256,15 @@
               </ul>
             </div>
 
-            <div class="page-footer__wrapper page-footer__wrapper--nav">
-              <div class="page-footer__title-btn" data-is-open="false">
+            <div class="page-footer__wrapper page-footer__wrapper--nav accordion__item">
+              <div class="page-footer__title-box accordion__trigger" data-is-open="false">
                 <h3 class="page-footer__title">Разделы сайта</h3>
-                <button class="page-footer__btn show-hide show-hide--menu" data-is-open="false" type="button">
+                <div class="accordion__icon" data-is-open="false">
                   <span class="visually-hidden">Показать/скрыть</span>
-                </button>
+                </div>
               </div>
 
-              <div class="page-footer__menu-box">
+              <div class="page-footer__menu-box accordion__content">
                 <ul class="page-footer__menu">
                   <li class="page-footer__menu-item">
                     <a href="#">О Компаниии</a>
@@ -293,15 +293,15 @@
               </div>
             </div>
 
-            <div class="page-footer__wrapper page-footer__wrapper--contacts">
-              <div class="page-footer__title-btn" data-is-open="true">
+            <div class="page-footer__wrapper page-footer__wrapper--contacts accordion__item">
+              <div class="page-footer__title-box accordion__trigger" data-is-open="true">
                 <h3 class="page-footer__title">Наш офис</h3>
-                <button class="page-footer__btn show-hide show-hide--contacts" data-is-open="true" type="button">
+                <div class="accordion__icon" data-is-open="true">
                   <span class="visually-hidden">Показать/скрыть</span>
-                </button>
+                </div>
               </div>
 
-              <div class="page-footer__contacts-box">
+              <div class="page-footer__contacts-box accordion__content">
                 <ul class="page-footer__contacts-list">
                   <li class="page-footer__contacts-item">
                     <address>г. Мытищи, Олимпийский проспект, д.10</address>
