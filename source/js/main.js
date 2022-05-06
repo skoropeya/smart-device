@@ -1,6 +1,7 @@
 import {iosVhFix} from './utils/ios-vh-fix';
 import {initModals} from './modules/modals/init-modals';
 import {setClickReadMore} from './modules/read-more';
+import {setMask} from './utils/mask-phone';
 
 // ---------------------------------
 
@@ -10,6 +11,7 @@ window.addEventListener('DOMContentLoaded', () => {
   // ---------------------------------
 
   iosVhFix();
+  setMask();
 
   // Modules
   // ---------------------------------
