@@ -11,12 +11,6 @@
     cursor: pointer;
   }
 
-  .accordion__trigger[data-is-open="false"] {
-    & + div {
-      display: none;
-    }
-  }
-
   .accordion__icon {
     display: block;
     width: 30px;
@@ -36,8 +30,12 @@
     }
   }
 
-  .accordion__icon[data-is-open="false"] {
-    &::after {
+  .accordion__trigger[data-is-open="false"] {
+    & + div {
+      display: none;
+    }
+
+    .accordion__icon::after {
       content: "";
       position: absolute;
       top: 50%;

@@ -3,6 +3,7 @@ import {initModals} from './modules/modals/init-modals';
 import {setClickReadMore} from './modules/read-more';
 import {setMask} from './modules/mask-phone';
 import {setOnClickBtnConsultation} from './modules/slow-scroll';
+import {setClickAccordion} from './modules/accordion';
 
 // ---------------------------------
 
@@ -23,6 +24,7 @@ window.addEventListener('DOMContentLoaded', () => {
     setClickReadMore();
     setMask();
     setOnClickBtnConsultation();
+    setClickAccordion();
   });
 });
 
