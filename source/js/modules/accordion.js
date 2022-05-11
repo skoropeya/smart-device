@@ -1,17 +1,28 @@
 const items = document.querySelectorAll('.accordion__item');
+const mediaQuery = window.matchMedia('(max-width: 767px)');
+
+const openedItem = (elem) => {
+  if (elem.dataset.isOpen === 'true') {
+    return true;
+  }
+  return false;
+};
 
 const onClickItem = (evt) => {
-  const item = evt.target.closest('.accordion__item');
-  const trigger = item.querySelector('.accordion__trigger');
-
-
-
-  if (trigger.dataset.isOpen === 'false') {
-    trigger.dataset.isOpen = true;
-  } else {
-
+  if (mediaQuery.matches) {
+    items.forEach((item) => {
+      const trigger = item.querySelector('.accordion__trigger');
+      if (item === evt.target.closest('.accordion__item')) {
+        if (openedItem(trigger)) {
+          trigger.dataset.isOpen = false;
+        } else {
+          trigger.dataset.isOpen = true;
+        }
+      } else {
+        trigger.dataset.isOpen = false;
+      }
+    });
   }
-  // console.log(trigger);
 };
 
 const setClickAccordion = () => {
