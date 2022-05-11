@@ -1,5 +1,10 @@
-const items = document.querySelectorAll('.accordion__item');
+const accordion = document.querySelector('.accordion');
+const items = accordion.querySelectorAll('.accordion__item');
 const mediaQuery = window.matchMedia('(max-width: 767px)');
+
+const useJs = () => {
+  accordion.dataset.isJs = true;
+};
 
 const openedItem = (elem) => {
   if (elem.dataset.isOpen === 'true') {
@@ -31,4 +36,4 @@ const setClickAccordion = () => {
   });
 };
 
-export {setClickAccordion};
+export {useJs, setClickAccordion};

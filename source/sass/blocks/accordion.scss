@@ -3,6 +3,20 @@
 }
 
 @include vp-767 {
+  .accordion[data-is-js="false"]{
+    .accordion__icon {
+      display: none;
+    }
+
+    .accordion__trigger {
+      cursor: auto;
+
+      & + div {
+        display: block;
+      }
+    }
+  }
+
   .accordion__trigger {
     height: 60px;
     display: flex;
