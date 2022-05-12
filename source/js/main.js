@@ -1,9 +1,9 @@
 import {iosVhFix} from './utils/ios-vh-fix';
-import {initModals} from './modules/modals/init-modals';
 import {setClickReadMore} from './modules/read-more';
 import {setMask} from './modules/mask-phone';
 import {setOnClickBtnConsultation} from './modules/slow-scroll';
 import {useJs, setClickAccordion} from './modules/accordion';
+import {onClickBtnOpenModal} from './modules/modal';
 
 // ---------------------------------
 
@@ -20,11 +20,11 @@ window.addEventListener('DOMContentLoaded', () => {
   // все скрипты должны быть в обработчике 'DOMContentLoaded', но не все в 'load'
   // в load следует добавить скрипты, не участвующие в работе первого экрана
   window.addEventListener('load', () => {
-    initModals();
     setClickReadMore();
     setMask();
     setOnClickBtnConsultation();
     setClickAccordion();
+    onClickBtnOpenModal();
   });
 });
 

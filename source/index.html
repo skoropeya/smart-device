@@ -43,7 +43,7 @@
               </a>
             </div>
 
-            <a class="main-nav__request-call btn btn--transparent-light" href="#">Заказать звонок</a>
+            <a class="main-nav__request-call btn btn--transparent-light" id="request-call" href="#">Заказать звонок</a>
           </nav>
         </div>
       </header>
@@ -323,13 +323,13 @@
       </footer>
     </div>
 
-    <div class="modal">
+    <div class="modal" data-is-open="false">
       <div class="modal__wrapper">
         <div class="modal__overlay"></div>
         <div class="modal__content">
           <h2 class="modal__heading">Закажите звонок</h2>
           <p class="modal__description">Оставьте контакты, мы&nbsp;проконсультируем вас&nbsp;бесплатно в&nbsp;удобное время</p>
-          <button class="modal__close-btn btn-reset" type="button">
+          <button class="modal__close-btn" id="btn-close" type="button">
             <span class="visually-hidden">Закрыть окно</span>
             <svg width="20" height="20">
               <use xlink:href="img/sprite_auto.svg#icon-close"></use>

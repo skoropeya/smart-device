@@ -6,20 +6,14 @@
   left: 0;
   z-index: 100;
 
-        // overflow-y: hidden;
-  // -webkit-overflow-scrolling: touch;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
 
   background-color: $color-black-pearl-transparent-70;
 
-  // visibility: hidden;
-  // opacity: 0;
-
-  // pointer-events: none;
-
-  // -ms-overflow-style: none;
-  // scrollbar-width: none;
-
-
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
 
   &__wrapper {
     position: relative;
@@ -108,10 +102,9 @@
     }
   }
 
-  &.is-active {
+  &[data-is-open="true"] {
     visibility: visible;
     opacity: 1;
-
     pointer-events: auto;
   }
 }
