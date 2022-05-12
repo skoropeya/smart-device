@@ -1,4 +1,5 @@
 import {iosVhFix} from './utils/ios-vh-fix';
+import {setViewportWidth} from './utils/vw-fix';
 import {setClickReadMore} from './modules/read-more';
 import {setMask} from './modules/mask-phone';
 import {setOnClickBtnConsultation} from './modules/slow-scroll';
@@ -14,7 +15,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
   iosVhFix();
   useJs();
-
+  setViewportWidth();
   // Modules
   // ---------------------------------
 
