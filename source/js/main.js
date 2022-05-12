@@ -14,6 +14,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
   iosVhFix();
   useJs();
+
   // Modules
   // ---------------------------------
 

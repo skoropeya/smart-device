@@ -29,6 +29,9 @@ const openModal = () => {
   document.body.style.overflow = 'hidden';
   modal.dataset.isOpen = true;
 
+  const inputName = modal.querySelector('#request-call-name');
+  inputName.focus();
+
   btnClose.addEventListener('click', closeModal);
   document.addEventListener('keydown', keydownDocument);
   modal.addEventListener('click', onClickOverlay);
