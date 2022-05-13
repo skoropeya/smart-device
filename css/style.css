@@ -1101,7 +1101,7 @@ button,
   margin: 0;
 }
 
-.promo .promo__question-partial {
+.promo .promo__question span:last-child {
   display: none;
 }
 
@@ -2199,11 +2199,11 @@ button,
     margin-left: 0;
   }
 
-  .promo .promo__question-full {
+  .promo .promo__question span:first-child {
     display: none;
   }
 
-  .promo .promo__question-partial {
+  .promo .promo__question span:last-child {
     display: inline;
   }
 
