@@ -39,10 +39,10 @@
 
   .promo__question {
     margin: 0;
-  }
 
-  .promo__question-partial {
-    display: none;
+    span:last-child {
+      display: none;
+    }
   }
 }
 
@@ -107,14 +107,14 @@
     .promo__question {
       width: 100%;
       margin-left: 0;
-    }
 
-    .promo__question-full {
-      display: none;
-    }
+      span:first-child {
+        display: none;
+      }
 
-    .promo__question-partial {
-      display: inline;
+      span:last-child {
+        display: inline;
+      }
     }
   }
 }

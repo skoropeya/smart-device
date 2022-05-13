@@ -3,7 +3,7 @@
 }
 
 @include vp-767 {
-  .accordion[data-is-js="false"]{
+  .accordion[data-is-js="false"] {
     .accordion__icon {
       display: none;
     }
