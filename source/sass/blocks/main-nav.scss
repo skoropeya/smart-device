@@ -6,17 +6,21 @@
 
 .main-nav__logo-link {
   flex-shrink: 0;
+  margin-right: 10px;
 }
 
 .main-nav__box {
   display: flex;
   justify-content: space-between;
-  width: 37.7%;
+  flex-wrap: wrap;
+  min-width: 38.7%;
+  margin-right: -15px;
 }
 
 .main-nav__contact {
   display: flex;
   color: $color-alice-blue;
+  margin-right: 15px;
 
   .main-nav__icon {
     margin-right: 15px;
@@ -45,21 +49,24 @@
 }
 
 .main-nav__request-call {
+  flex-shrink: 0;
   margin: 0;
-  margin-right: 60px;
+  margin-left: 10px;
+  margin-right: 4.92%;
   margin-bottom: 5px;
 }
 
 @include vp-1439 {
   .main-nav__box {
-    width: 45%;
+    min-width: 45%;
   }
 }
 
 @include vp-1023 {
   .main-nav__box {
+    min-width: auto;
     width: auto;
-    margin-right: 20px;
+    margin-right: 0;
     margin-bottom: 15px;
   }
 
@@ -69,6 +76,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-right: 20px;
 
     .main-nav__icon {
       margin-right: 0;
@@ -77,10 +85,6 @@
     span {
       display: none;
     }
-  }
-
-  .main-nav__contact--mail {
-    margin-right: 20px;
   }
 
   .main-nav__request-call {
@@ -98,7 +102,7 @@
   }
 
   .main-nav__box {
-    margin-right: 10px;
+    margin-right: -10px;
     margin-bottom: 0;
   }
 }
