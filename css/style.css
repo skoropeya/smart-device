@@ -563,6 +563,7 @@ button,
   min-height: 100vh;
   /* stylelint-disable-next-line */
   min-height: calc(100 * var(--vh, 1vh));
+  overflow: hidden;
 }
 
 .wrapper .header,
@@ -1011,6 +1012,7 @@ button,
 .main-nav__logo-link {
   -ms-flex-negative: 0;
   flex-shrink: 0;
+  margin-right: 10px;
 }
 
 .main-nav__box {
@@ -1020,7 +1022,10 @@ button,
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  width: 37.7%;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  min-width: 38.7%;
+  margin-right: -15px;
 }
 
 .main-nav__contact {
@@ -1028,6 +1033,7 @@ button,
   display: -ms-flexbox;
   display: flex;
   color: #f8fdff;
+  margin-right: 15px;
 }
 
 .main-nav__contact .main-nav__icon {
@@ -1045,8 +1051,11 @@ button,
 }
 
 .main-nav__request-call {
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
   margin: 0;
-  margin-right: 60px;
+  margin-left: 10px;
+  margin-right: 4.92%;
   margin-bottom: 5px;
 }
 
@@ -1275,6 +1284,7 @@ button,
   line-height: 220px;
   color: transparent;
   background-image: url("../img/back/scheme.jpg");
+  background-size: auto;
   background-repeat: no-repeat;
   background-position: center;
   -webkit-background-clip: text;
@@ -1695,7 +1705,7 @@ button,
   }
 
   .main-nav__box {
-    width: 45%;
+    min-width: 45%;
   }
 
   .about__wrapper {
@@ -1712,6 +1722,7 @@ button,
     min-height: 100px;
     padding-top: 20px;
     padding-bottom: 25px;
+    position: absolute;
   }
 
   .page-footer {
@@ -1788,8 +1799,9 @@ button,
   }
 
   .main-nav__box {
+    min-width: auto;
     width: auto;
-    margin-right: 20px;
+    margin-right: 0;
     margin-bottom: 15px;
   }
 
@@ -1805,6 +1817,7 @@ button,
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
+    margin-right: 20px;
   }
 
   .main-nav__contact .main-nav__icon {
@@ -1813,10 +1826,6 @@ button,
 
   .main-nav__contact span {
     display: none;
-  }
-
-  .main-nav__contact--mail {
-    margin-right: 20px;
   }
 
   .main-nav__request-call {
@@ -1830,8 +1839,8 @@ button,
     background-position-x: 0, 20%;
     padding-top: 180px;
     padding-bottom: 207px;
-    top: -100px;
-    margin-bottom: -20px;
+    top: 0;
+    margin-bottom: 80px;
   }
 
   .promo .promo-wrapper {
@@ -2163,7 +2172,7 @@ button,
   }
 
   .main-nav__box {
-    margin-right: 10px;
+    margin-right: -10px;
     margin-bottom: 0;
   }
 
@@ -2179,7 +2188,7 @@ button,
     background-position-x: 0, 25%;
     padding-top: 150px;
     padding-bottom: 192px;
-    top: -70px;
+    margin-bottom: 50px;
   }
 
   .promo h2 {
@@ -2432,6 +2441,11 @@ button,
   .features__item {
     min-height: 340px;
   }
+
+  .features__item--confidentiality,
+  .features__item--cost {
+    min-height: 325px;
+  }
 }
 
 @media (-webkit-min-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3/2), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
@@ -2442,9 +2456,8 @@ button,
   }
 
   .about__decoration {
-    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(71.72%, rgba(25, 32, 36, 0.7)), to(rgba(25, 32, 36, 0))), url("../img/back/scheme@2x.jpg");
-    background-image: -o-linear-gradient(top, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%), url("../img/back/scheme@2x.jpg");
-    background-image: linear-gradient(180deg, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%), url("../img/back/scheme@2x.jpg");
+    background-image: url("../img/back/scheme@2x.jpg");
+    background-size: 320px auto;
   }
 
   .services__item {
