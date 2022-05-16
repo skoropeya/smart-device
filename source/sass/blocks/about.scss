@@ -70,12 +70,14 @@
 
   color: transparent;
   background-image: url("../img/back/scheme.jpg");
+  background-size: auto;
   background-repeat: no-repeat;
   background-position: center;
   background-clip: text;
 
   @include retina {
-    background-image: $black-pearl-promo, url("../img/back/scheme@2x.jpg");
+    background-image: url("../img/back/scheme@2x.jpg");
+    background-size: 320px auto;
   }
 }
 
