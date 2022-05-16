@@ -52,8 +52,8 @@
     background-position-x: 0, 20%;
     padding-top: 180px;
     padding-bottom: 207px;
-    top: -100px;
-    margin-bottom: -20px;
+    top: 0;
+    margin-bottom: 80px;
 
     @include retina {
       background-image: $black-pearl-promo, url("../img/back/promo-tablet@2x.jpg");
@@ -86,7 +86,7 @@
     background-position-x: 0, 25%;
     padding-top: 150px;
     padding-bottom: 192px;
-    top: -70px;
+    margin-bottom: 50px;
 
     @include retina {
       background-image: $black-pearl-promo, url("../img/back/promo-mobile@2x.jpg");

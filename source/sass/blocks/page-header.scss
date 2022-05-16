@@ -12,6 +12,7 @@
     min-height: 100px;
     padding-top: 20px;
     padding-bottom: 25px;
+    position: absolute;
   }
 
   @include vp-767 {
