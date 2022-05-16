@@ -123,5 +123,10 @@
 @include vp-320 {
   .features__item {
     min-height: 340px;
+
+    &--confidentiality,
+    &--cost {
+      min-height: 325px;
+    }
   }
 }
