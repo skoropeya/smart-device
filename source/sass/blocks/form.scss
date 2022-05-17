@@ -147,6 +147,10 @@
       min-height: 180px;
       padding-top: 23px;
     }
+
+    button[type="submit"] {
+      margin-bottom: 25px;
+    }
   }
 
   .form__wrapper {
@@ -164,7 +168,7 @@
   .form__wrapper--bottom {
     display: flex;
     flex-direction: column-reverse;
-    gap: 25px;
+    gap: initial;
   }
 
   .form__checkbox {

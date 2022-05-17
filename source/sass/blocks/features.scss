@@ -121,6 +121,10 @@
 }
 
 @include vp-320 {
+  .features {
+    margin-bottom: 45px;
+  }
+
   .features__item {
     min-height: 340px;
 
