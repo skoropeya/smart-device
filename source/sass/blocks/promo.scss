@@ -7,8 +7,7 @@
   color: $color-alice-blue;
   padding-top: 305px;
   padding-bottom: 280px;
-  position: relative;
-  top: -120px;
+  margin-bottom: 120px;
 
   @include retina {
     background-image: $black-pearl-promo, url("../img/back/promo-desktop@2x.jpg");
@@ -52,7 +51,6 @@
     background-position-x: 0, 20%;
     padding-top: 180px;
     padding-bottom: 207px;
-    top: 0;
     margin-bottom: 80px;
 
     @include retina {
