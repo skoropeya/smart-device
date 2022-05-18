@@ -632,7 +632,7 @@ button,
   background-image: -o-linear-gradient(top, #041827 84.9%, rgba(4, 24, 39, 0) 100%);
   background-image: linear-gradient(180deg, #041827 84.9%, rgba(4, 24, 39, 0) 100%);
   color: #f8fdff;
-  position: sticky;
+  position: fixed;
   top: 0;
   z-index: 3;
 }
@@ -1034,6 +1034,7 @@ button,
   display: flex;
   color: #f8fdff;
   margin-right: 15px;
+  margin-bottom: 10px;
 }
 
 .main-nav__contact .main-nav__icon {
@@ -1079,8 +1080,7 @@ button,
   color: #f8fdff;
   padding-top: 305px;
   padding-bottom: 280px;
-  position: relative;
-  top: -120px;
+  margin-bottom: 120px;
 }
 
 .promo .promo-wrapper {
@@ -1839,7 +1839,6 @@ button,
     background-position-x: 0, 20%;
     padding-top: 180px;
     padding-bottom: 207px;
-    top: 0;
     margin-bottom: 80px;
   }
 
